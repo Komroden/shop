@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 1600px;
+  min-height: 75px;
+  background: #222222;
+  margin: 0 auto;
+}
+
+.header__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 75px;
+}
+
+.header__navbar_shop {
+  margin-left: 33px;
+}
+
+.header__navbar_contact {
+  margin-left: 33px;
+}
+
+.header__navbar_logo {
+  margin-right: 41px;
+}
+
+.brand {
+  max-width: 1600px;
+  min-height: 764px;
+  background: #F1E4E6;
+  margin: 0 auto;
+}
+
+.brand__bg {
+  padding-right: 331px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.brand__bg_model {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.brand__bg_text {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #222222;
+  position: relative;
+}
+
+.brand__bg_text::before {
+  content: url(img/palka.png);
+  position: absolute;
+  height: 0px;
+  left: -25px;
+}
+
+.brand__bg_fashion {
+  color: #F16D7F;
+}
+
+.brand__bg_brand {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #222222;
+}
+
+.offer {
+  margin-top: 65px;
+  margin-bottom: 96px;
+}
+
+.offer__cardbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer__cardbox_women {
+  margin-right: 30px;
+  position: relative;
+}
+
+.offer__cardbox_text {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+
+.offer__cardbox_img {
+  width: 100%;
+}
+
+.offer__cardbox_styletext {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #F16D7F;
+}
+
+.offer__cardbox_men {
+  margin-right: 30px;
+  position: relative;
+}
+
+.offer__cardbox_kids {
+  position: relative;
+}
+
+.offer__accesories {
+  margin-top: 30px;
+}
+
+.offer__accesories_card {
+  position: relative;
+}
+
+.offer__accesories_text {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: absolute;
+  top: 35%;
+  left: 45%;
+}
+
+.products {
+  min-height: 1395px;
+}
+
+.products_title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+  text-align: center;
+}
+
+.products_text {
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+  text-align: center;
+}
+
+.products__cardbox {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products__cardbox_card {
+  max-width: 360px;
+  background: #F8F8F8;
+  margin-bottom: 30px;
+}
+
+.products__cardbox_info {
+  padding: 18px 25px 18px 20px;
+}
+
+.products__cardbox_margin {
+  margin-right: 30px;
+}
+
+.products__cardbox_img {
+  width: 100%;
+}
+
+.products__cardbox_title {
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.products__cardbox_text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+  margin-bottom: 18px;
+}
+
+.products__cardbox_price {
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+}
+
+.products__button {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products__button_button {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  border: 1px solid #FF6A6A;
+  color: #F26376;
+  background: #FFFFFF;
+  padding: 15px 38px;
+  text-decoration: none;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.feature {
+  margin: 0 auto;
+  background: #222224;
+  margin-top: 100px;
+  width: 1600px;
+  min-height: 341px;
+}
+
+.feature__cardbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 103px;
+}
+
+.feature__cardbox_card {
+  max-width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature__cardbox_margin {
+  margin-right: 30px;
+}
+
+.feature__cardbox_info {
+  padding-top: 28px;
+}
+
+.feature__cardbox_title {
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #FBFBFB;
+  text-align: center;
+}
+
+.feature__cardbox_text {
+  padding-top: 16px;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB;
+}
+
+.subscribe {
+  margin: 0 auto;
+  background-image: url(img/bgr_sub.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1600px;
+  min-height: 448px;
+}
+
+.subscribe__body {
+  min-height: 448px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe__body_left {
+  max-width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe__body_text {
+  padding-top: 30px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.subscribe__body_style {
+  font-style: italic;
+}
+
+.subscribe__body_ridth {
+  max-width: 557px;
+}
+
+.subscribe__body_title {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  color: #222224;
+}
+
+.subscribe__body_stylesub {
+  font-size: 24px;
+  line-height: 40px;
+  color: #222224;
+}
+
+.subscribe__body_area {
+  padding-top: 32px;
+}
+
+.subscribe__body_email {
+  font-size: 14px;
+  line-height: 17px;
+  color: #222224;
+  opacity: 0.67;
+  background: #E1E1E1;
+  padding: 7px 64px 7px 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.subscribe__body_button {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  padding: 7px;
+  background: #F16D7F;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer {
+  width: 1600px;
+  min-height: 79px;
+  background: #222224;
+  margin: 0 auto;
+}
+
+.footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 79px;
+}
+
+.footer__body_text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+}
+
+.footer__body_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 148px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=style__shop.css.map */
