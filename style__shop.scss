@@ -1,0 +1,425 @@
+$width-site: 1600px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    font-family: 'Lato', sans-serif;
+
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: $width-site;
+    min-height: 75px;
+    background: #222222;
+    margin: 0 auto;
+
+    &__navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 75px;
+
+        &_left {}
+
+        &_ridth {}
+
+        &_shop {
+            margin-left: 33px;
+        }
+
+        &_contact {
+            margin-left: 33px;
+        }
+
+        &_logo {
+            margin-right: 41px;
+        }
+
+    }
+}
+
+.brand {
+    max-width: $width-site;
+    min-height: 764px;
+    background: #F1E4E6;
+    margin: 0 auto;
+
+
+    &__bg {
+        padding-right: 331px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        &_model {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+
+        &_text {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+            color: #222222;
+            position: relative;
+
+            &::before {
+                content: url(img/palka.png);
+                position: absolute;
+                height: 0px;
+                left: -25px;
+
+            }
+        }
+
+        &_fashion {
+            color: #F16D7F;
+        }
+
+        &_brand {
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 58px;
+            color: #222222;
+        }
+    }
+}
+
+.offer {
+
+    margin-top: 65px;
+    margin-bottom: 96px;
+
+    &__cardbox {
+        display: flex;
+        justify-content: space-between;
+
+
+        &_women {
+            margin-right: 30px;
+            position: relative;
+        }
+
+        &_text {
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+            font-weight: 400;
+            text-transform: uppercase;
+            position: absolute;
+            top: 40%;
+            left: 35%;
+
+        }
+
+        &_img {
+            width: 100%;
+        }
+
+        &_styletext {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: #F16D7F;
+
+        }
+
+        &_men {
+            margin-right: 30px;
+            position: relative;
+        }
+
+        &_kids {
+            position: relative;
+        }
+    }
+
+    &__accesories {
+        margin-top: 30px;
+
+        &_card {
+            position: relative;
+        }
+
+        &_text {
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+            font-weight: 400;
+            text-transform: uppercase;
+            position: absolute;
+            top: 35%;
+            left: 45%;
+        }
+    }
+}
+
+.products {
+
+
+    min-height: 1395px;
+
+    &_title {
+        font-size: 30px;
+        line-height: 36px;
+        color: #222222;
+        text-align: center;
+    }
+
+    &_text {
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+        text-align: center;
+    }
+
+    &__cardbox {
+        margin-top: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &_card {
+            max-width: 360px;
+            background: #F8F8F8;
+            margin-bottom: 30px;
+        }
+
+        &_info {
+            padding: 18px 25px 18px 20px;
+
+        }
+
+        &_margin {
+            margin-right: 30px;
+        }
+
+        &_img {
+            width: 100%;
+
+        }
+
+        &_title {
+            font-size: 13px;
+            line-height: 16px;
+            color: #000000;
+            text-transform: uppercase;
+            margin-bottom: 13px;
+
+        }
+
+        &_text {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #5D5D5D;
+            margin-bottom: 18px;
+        }
+
+        &_price {
+            font-size: 16px;
+            line-height: 19px;
+            color: #F16D7F;
+        }
+
+
+    }
+
+    &__button {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+
+        &_flex {}
+
+        &_button {
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            border: 1px solid #FF6A6A;
+            color: #F26376;
+            background: #FFFFFF;
+            padding: 15px 38px;
+            text-decoration: none;
+            justify-self: center;
+
+        }
+    }
+
+}
+
+.feature {
+    margin: 0 auto;
+    background: #222224;
+    margin-top: 100px;
+    width: $width-site;
+    min-height: 341px;
+
+    &__cardbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 103px;
+
+        &_card {
+            max-width: 360px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        &_margin {
+            margin-right: 30px;
+        }
+
+        &_img {}
+
+        &_info {
+            padding-top: 28px;
+        }
+
+        &_title {
+            font-size: 19.96px;
+            line-height: 24px;
+            color: #FBFBFB;
+            text-align: center;
+        }
+
+        &_text {
+            padding-top: 16px;
+            font-weight: 300;
+            font-size: 13.972px;
+            line-height: 17px;
+            text-align: center;
+            color: #FBFBFB;
+
+        }
+    }
+}
+
+.subscribe {
+    margin: 0 auto;
+    background-image: url(img/bgr_sub.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: $width-site;
+    min-height: 448px;
+
+    &__body {
+        min-height: 448px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_left {
+            max-width: 360px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_img {}
+
+        &_text {
+            padding-top: 30px;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #000000;
+        }
+
+        &_style {
+            font-style: italic;
+        }
+
+        &_ridth {
+            max-width: 557px;
+        }
+
+        &_title {
+            padding-top: 40px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 30px;
+            color: #222224;
+        }
+
+        &_stylesub {
+            font-size: 24px;
+            line-height: 40px;
+            color: #222224;
+        }
+
+        &_area {
+            padding-top: 32px;
+        }
+
+        &_form {}
+
+        &_email {
+            font-size: 14px;
+            line-height: 17px;
+            color: #222224;
+            opacity: 0.67;
+            background: #E1E1E1;
+            padding: 7px 64px 7px 22px;
+            box-sizing: border-box;
+        }
+
+        &_button {
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            padding: 7px;
+            background: #F16D7F;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.footer {
+    width: $width-site;
+    min-height: 79px;
+    background: #222224;
+    margin: 0 auto;
+
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 79px;
+
+        &_copy {}
+
+        &_text {
+            font-size: 16px;
+            line-height: 19px;
+            color: #FBFBFB;
+        }
+
+        &_social {
+            display: flex;
+            width: 148px;
+            justify-content: space-between;
+        }
+
+        &_media {}
+    }
+}
