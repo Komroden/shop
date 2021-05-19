@@ -62,12 +62,6 @@ $width-site: 1600px;
             padding: 0px 16px;
         }
 
-
-
-        &_left {}
-
-        &_ridth {}
-
         &_shop {
             margin-left: 33px;
 
@@ -124,8 +118,6 @@ $width-site: 1600px;
                 margin-top: 0;
             }
 
-
-
         }
 
         &_title {
@@ -167,6 +159,10 @@ $width-site: 1600px;
 
             @media (min-width: 768px) {
                 margin-bottom: 40px;
+            }
+
+            @media (min-width: 1600px) {
+                max-width: 652px;
             }
 
         }
@@ -249,7 +245,7 @@ $width-site: 1600px;
 
         @media (min-width: 1600px) {
             justify-content: flex-end;
-            width: 734px;
+            width: 652px;
         }
 
 
