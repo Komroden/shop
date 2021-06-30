@@ -66,6 +66,69 @@ $width-site: 1600px;
         &_logo {
             margin-right: 38px;
         }
+        &_ridth {
+            position: relative;
+        }
+
+        .header {
+            &__cartIconWrap {
+                position: relative;
+                cursor: pointer;
+            }
+            &__cartIconWrap span {
+                display: inline-block;
+                width: 19px;
+                height: 19px;
+                color: white;
+                background: #f16d7f;
+                border-radius: 50%;
+                position: absolute;
+                text-align: center;
+                right: -8px;
+                top: -19px;
+                font-size: 12px;
+                line-height: 19px;
+            }
+
+            &__basket {
+                position: absolute;
+                z-index: 3;
+                right: 0;
+                top: 37px;
+                background: white;
+                padding: 10px;
+                border: 1px solid #ebebeb;
+                border-radius: 3px;
+                font-size: 14px;
+                @media (min-width: 340px) {
+                    font-size: 16px;
+                }
+                @media (min-width: 552px) {
+                    width: 500px;
+                }
+            }
+
+            &__basketRow {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+                margin-bottom: 10px;
+                border-bottom: 1px solid #ebebeb;
+                padding-bottom: 10px;
+            }
+
+            &__basketHeader {
+                font-weight: bold;
+            }
+
+            &__basketTotal {
+                font-weight: bold;
+                text-align: right;
+            }
+        }
+        .hidden {
+            display: none;
+        }
     }
 }
 
@@ -328,6 +391,40 @@ $width-site: 1600px;
             max-width: 360px;
             background: #f8f8f8;
             position: relative;
+            &:hover .products__cardbox_dark {
+                display: flex;
+            }
+
+            @media (max-width: 768px) {
+                margin-bottom: 16px;
+            }
+        }
+        .products__cardbox_dark {
+            position: absolute;
+            width: 100%;
+            height: 420px;
+            left: 0;
+            top: 0;
+            background: rgba(58, 56, 56, 0.86);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .products__cardbox_dark button {
+            background: none;
+            border: 1px solid white;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 14px;
+            font-size: 14px;
+            font-family: inherit;
+        }
+
+        .products__cardbox_dark button img {
+            width: 26px;
+            height: 24px;
+            margin-right: 11px;
         }
 
         &_hidden {
@@ -653,4 +750,97 @@ $width-site: 1600px;
             }
         }
     }
+}
+.featuredItems {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+}
+
+@media (min-width: 640px) {
+    .featuredItems {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 18px;
+        column-gap: 16px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .featuredItems {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+.featuredItem {
+    background: #f8f8f8;
+}
+
+.featuredItem img {
+    width: 100%;
+    display: block;
+}
+
+.featuredImgWrap {
+    position: relative;
+}
+
+.featuredItem:hover .featuredImgDark {
+    display: flex;
+}
+
+.featuredImgDark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(58, 56, 56, 0.86);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.featuredImgDark button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.featuredImgDark button img {
+    width: 26px;
+    height: 24px;
+    margin-right: 11px;
+}
+
+.featuredData {
+    padding: 23px 16px 20px;
+}
+
+.featuredName {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.featuredText {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+
+.featuredPrice {
+    font-size: 16px;
+    line-height: 19px;
+    color: #f16d7f;
+}
+.hidden {
+    display: none;
 }

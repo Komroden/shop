@@ -22,7 +22,24 @@
           <div class="header__navbar_ridth">
             <img class="header__navbar_burger" src="img/burger.svg" alt="burger">
             <img class="header__navbar_contact" src="img/contact.svg" alt="contact">
-            <img class="header__navbar_shop" src="img/shop.svg" alt="shop">
+            <span class="header__cartIconWrap">
+              <img class="header__cartIcon" src="img/cart.png" alt="">
+              <span>0</span>
+            </span>
+
+            <div class="header__basket hidden">
+              <div class="header__basketRow header__basketHeader">
+                <div>Название товара</div>
+                <div>Количество</div>
+                <div>Цена за шт.</div>
+                <div>Итого</div>
+              </div>
+
+              <div class="header__basketTotal">
+                Товаров в корзине на сумму:
+                $<span class="header__basketTotalValue">0</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -121,88 +138,8 @@
       </div>
     </div>
     <main class="products container">
-      <div class="products__cardbox">
-        <article class="products__cardbox_card ">
-          <img class="products__cardbox_img" src="img/card-1.png" alt="card-1">
-          <div class="products__cardbox_info">
-            <h5 class="products__cardbox_title">ellery x m'o capsule</h5>
-            <p class="products__cardbox_text">Known for her sculptural takes on traditional tailoring, Australian
-              arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-            <p class="products__cardbox_price">$52.00</p>
-          </div>
-        </article>
-        <article class="products__cardbox_card ">
-          <img class="products__cardbox_img" src="img/card-2.png" alt="card-2">
-          <div class="products__cardbox_info">
-            <h5 class="products__cardbox_title">ellery x m'o capsule</h5>
-            <p class="products__cardbox_text">Known for her sculptural takes on traditional tailoring, Australian
-              arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-            <p class="products__cardbox_price">$52.00</p>
-          </div>
-        </article>
-        <article class="products__cardbox_card products__cardbox_hidden">
-          <img class="products__cardbox_img" src="img/card-3.png" alt="card-3">
-          <div class="products__cardbox_info">
-            <h5 class="products__cardbox_title">ellery x m'o capsule</h5>
-            <p class="products__cardbox_text">Known for her sculptural takes on traditional tailoring, Australian
-              arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-            <p class="products__cardbox_price">$52.00</p>
-          </div>
-        </article>
-        <article class="products__cardbox_card ">
-          <img class="products__cardbox_img" src="img/card-4.png" alt="card-4">
-          <div class="products__cardbox_info">
-            <h5 class="products__cardbox_title">ellery x m'o capsule</h5>
-            <p class="products__cardbox_text">Known for her sculptural takes on traditional tailoring, Australian
-              arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-            <p class="products__cardbox_price">$52.00</p>
-          </div>
-        </article>
-        <article class="products__cardbox_card ">
-          <img class="products__cardbox_img" src="img/card-5.png" alt="card-5">
-          <div class="products__cardbox_info">
-            <h5 class="products__cardbox_title">ellery x m'o capsule</h5>
-            <p class="products__cardbox_text">Known for her sculptural takes on traditional tailoring, Australian
-              arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-            <p class="products__cardbox_price">$52.00</p>
-          </div>
-        </article>
-        <article class="products__cardbox_card ">
-          <img class="products__cardbox_img" src="img/card-6.png" alt="card-6">
-          <div class="products__cardbox_info">
-            <h5 class="products__cardbox_title">ellery x m'o capsule</h5>
-            <p class="products__cardbox_text">Known for her sculptural takes on traditional tailoring, Australian
-              arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-            <p class="products__cardbox_price">$52.00</p>
-          </div>
-        </article>
-        <article class="products__cardbox_card ">
-          <img class="products__cardbox_img" src="img/card-7.png" alt="card-7">
-          <div class="products__cardbox_info">
-            <h5 class="products__cardbox_title">ellery x m'o capsule</h5>
-            <p class="products__cardbox_text">Known for her sculptural takes on traditional tailoring, Australian
-              arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-            <p class="products__cardbox_price">$52.00</p>
-          </div>
-        </article>
-        <article class="products__cardbox_card ">
-          <img class="products__cardbox_img" src="img/card-8.png" alt="card-8">
-          <div class="products__cardbox_info">
-            <h5 class="products__cardbox_title">ellery x m'o capsule</h5>
-            <p class="products__cardbox_text">Known for her sculptural takes on traditional tailoring, Australian
-              arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-            <p class="products__cardbox_price">$52.00</p>
-          </div>
-        </article>
-        <article class="products__cardbox_card ">
-          <img class="products__cardbox_img" src="img/card-9.png" alt="card-9">
-          <div class="products__cardbox_info">
-            <h5 class="products__cardbox_title">ellery x m'o capsule</h5>
-            <p class="products__cardbox_text">Known for her sculptural takes on traditional tailoring, Australian
-              arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-            <p class="products__cardbox_price">$52.00</p>
-          </div>
-        </article>
+      <div class="featuredItems">
+
       </div>
       <div class="products__accordeon">
         <nav class="products__accordeon_menu">
@@ -289,8 +226,10 @@
       </div>
     </div>
   </div>
-
+  <script src="basket/products.js"></script>
+  <script src="basket/basket.js"></script>
   <script src="menu.js"></script>
+  <script src="basket/productsCards.js"></script>
 </body>
 
 </html>
